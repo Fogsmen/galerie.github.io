@@ -4,8 +4,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titel</title>
+<style>
+  .container {
+  position: relative;
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.container .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+ 
+    </style>
+  
   </head>
   <body>
- <img src="https://media-cdn.holidaycheck.com/w_2880,h_1620,c_fit,q_auto,f_auto/ugc/images/e9456e44-bc0f-3f58-ac1d-13cb20753329" alt="Aleq" width="100%" />
+    <div class="container">
+  <img src="https://media-cdn.holidaycheck.com/w_1280,h_720,c_fill,q_auto,f_auto/ugc/images/e9456e44-bc0f-3f58-ac1d-13cb20753329" alt="Notebook" style="width:100%;">
+  <div class="content">
+    <h1>Website Online</h1>
+    <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+<a href="https://logwork.com/countdown-xa88" class="countdown-timer" data-timezone="America/Los_Angeles" data-language="de" data-date="2023-08-23 20:00">Countdown Timer</a>
+    <p>Lorem ipsum..</p>
+  </div>
+</div>
   </body>
 </html>
