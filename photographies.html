@@ -6,7 +6,39 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Raleway&display=swap" rel="stylesheet">
+
+<style>
+
+ .container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+ 
+</style>
+
 </head>
+
 <body>
     <!-- HEADER DU SITE -->
     <header>
@@ -27,12 +59,19 @@
                 </ul>
             </li>
             <li>
-                <a class="lien-principal">Artistes &#9660;</a>
+                <a class="lien-principal"><div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+</div>Artistes </a>
            <ul class="sous-menu">
                     <li><a href="https://www.picdrop.com/hobbyfotograftarek/X7SHNbyx7C" class="lien-sous-menu">Private Bilder </a></li>
                     <li><a href="expositions.html" class="lien-sous-menu">Camp Galerie </a></li>
                     <li><a href="photographies.html" class="lien-sous-menu">lustige Fotos </a></li>
                 </ul>
+<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
  
             <li>
                 <a href="contact.html" class="lien-principal">Contact</a>
