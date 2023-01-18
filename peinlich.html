@@ -6,6 +6,52 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Raleway&display=swap" rel="stylesheet">
+
+<style>
+
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+/* Clear floats after containers */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Increase the font-size of a span element */
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .container {
+    text-align: center;
+  }
+
+  .container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+
+</style>
+
 </head>
 <body>
     <!-- HEADER DU SITE -->
@@ -37,9 +83,18 @@
     </nav>
     <!-- FIN DE NAV -->
     <!-- MON CONTENU -->
-    <section class="contenu-centre">
-        <p>Page en cours de contruction</p>
-    </section>
+    <div class="container">
+  
+
+
+
+<div class="container">
+  <img src="https://www.pfingstberg.de/wp-content/uploads/2018/12/profilbildDummyFrau.jpg" alt="Avatar" style="width:90px">
+  <p><span >Rebecca </span> <br>Mein lustiger Moment war in pool </p>
+  <br><br><p>Marie Zimmermann </p>
+</div>
+
+
     <!-- FIN DE CONTENU -->
     <!-- FOOTER -->
     <footer id="galerie-footer">
